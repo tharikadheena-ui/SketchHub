@@ -10,6 +10,7 @@ import {
   History,
   Settings,
   X,
+  FileSpreadsheet,
 } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 import { cn } from '../../utils/formatters';
@@ -22,6 +23,7 @@ interface SidebarProps {
 const NAV_ITEMS = [
   { to: '/', label: 'Overview', icon: LayoutDashboard },
   { to: '/events', label: 'Events', icon: Calendar },
+  { to: '/form-generator', label: 'Form Generator', icon: FileSpreadsheet },
   { to: '/participants', label: 'Participants', icon: Users },
   { to: '/attendance', label: 'Attendance', icon: UserCheck },
   { to: '/certificates', label: 'Certificates', icon: Award },

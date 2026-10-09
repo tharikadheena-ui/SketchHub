@@ -8,6 +8,7 @@ import { EventBuilderPage } from './pages/EventBuilderPage';
 import { EventDetailsPage } from './pages/EventDetailsPage';
 import { EventsPage } from './pages/EventsPage';
 import { ExportsPage } from './pages/ExportsPage';
+import { FormGeneratorPage } from './pages/FormGeneratorPage';
 import { OverviewPage } from './pages/OverviewPage';
 import { ParticipantsPage } from './pages/ParticipantsPage';
 import { PublicRegistrationPage } from './pages/PublicRegistrationPage';
@@ -24,6 +25,7 @@ export function App() {
         <Route path="events/registration-form" element={<RegistrationFormBuilderPage />} />
         <Route path="events/:eventId/registration-form" element={<RegistrationFormBuilderPage />} />
         <Route path="events/:eventId" element={<EventDetailsPage />} />
+        <Route path="form-generator" element={<FormGeneratorPage />} />
         <Route path="participants" element={<ParticipantsPage />} />
         <Route path="attendance" element={<AttendancePage />} />
         <Route path="certificates" element={<CertificatesPage />} />
